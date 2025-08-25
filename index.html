@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB Analytics - Empowering Business AI Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="Logo-new.png" alt="IB Analytics Logo" class="nav-logo-image">
+            </div>
+            <div class="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#industries" class="nav-link">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ai-solutions" class="nav-link">AI Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Transform Your Business with <span class="highlight-text">AI Innovation</span></h1>
+                    <p>We help where you stand on AI adoption</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-background">
+                        <div class="ai-transformation-bg"></div>
+                        <div class="ai-audit-poster">
+                            <div class="audit-score">
+                                <h3>AI Readiness Score</h3>
+                                <div class="score-circle">
+                                    <span class="score-number">45</span>
+                                    <span class="score-label">/100</span>
+                                </div>
+                                <div class="score-range">
+                                    <div class="range-bar">
+                                        <div class="range-fill" style="width: 45%"></div>
+                                    </div>
+                                    <div class="range-labels">
+                                        <span class="range-low">Low</span>
+                                        <span class="range-medium">Medium</span>
+                                        <span class="range-high">High</span>
+                                    </div>
+                                </div>
+                                <p class="score-description">Your organization needs AI transformation support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We <span class="highlight-text">Serve</span></h2>
+                <p>Transforming businesses across diverse sectors with AI-powered solutions</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Banking & Financials</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">AI-powered solutions for financial institutions to minimize risks and enhance customer experience.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>Default Loan Prediction:</strong> Minimize NPAs with predictive analytics</li>
+                                <li><strong>Customer Segmentation:</strong> Product recommendation optimization</li>
+                                <li><strong>Loan & Mortgage Approval:</strong> Automated approval processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Insurance</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">Advanced AI solutions for risk assessment, fraud detection, and automated underwriting.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>Fraud Detection:</strong> Advanced pattern recognition</li>
+                                <li><strong>Underwriting Automation:</strong> Streamlined risk assessment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Retail</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">Comprehensive retail analytics and automation solutions for enhanced customer experience.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>Customer Segmentation:</strong> Behavioral analysis & targeting</li>
+                                <li><strong>Churn Prediction:</strong> Customer retention optimization</li>
+                                <li><strong>Demand Forecasting:</strong> Inventory management optimization</li>
+                                <li><strong>Dashboard & Reporting:</strong> Real-time business insights</li>
+                                <li><strong>Dynamic Pricing:</strong> Revenue optimization strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Manufacturing</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">AI-driven manufacturing solutions for predictive maintenance and supply chain optimization.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>Predictive Maintenance:</strong> Equipment monitoring & optimization</li>
+                                <li><strong>Supply Chain Optimization:</strong> End-to-end efficiency improvement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Travel & Hospitality</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">Personalized travel experiences and revenue optimization through AI-powered solutions.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>Personalized Itineraries:</strong> Customized travel planning</li>
+                                <li><strong>Dynamic Pricing:</strong> Revenue management optimization</li>
+                                <li><strong>Demand Forecasting:</strong> Capacity planning & optimization</li>
+                                <li><strong>AI Assistants:</strong> Chatbots & virtual travel assistants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="industry-card" onclick="toggleIndustry(this)">
+                    <div class="industry-header">
+                        <div class="industry-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Legal</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="industry-preview">AI-powered legal assistance and document processing solutions for enhanced efficiency.</p>
+                    <div class="industry-details" style="display: none;">
+                        <div class="industry-features">
+                            <ul>
+                                <li><strong>AI Legal Assistant:</strong> Intelligent support for lawyers</li>
+                                <li><strong>Document Summarization:</strong> Automated legal document processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Solutions Section -->
+    <section id="ai-solutions" class="ai-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight-text">AI Solutions</span></h2>
+                <p>Comprehensive AI solutions tailored to transform your business operations and drive growth</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card" onclick="toggleSolution(this)">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>AI Readiness Audits</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="solution-preview">Comprehensive assessment of your organization's current AI adoption status across all critical dimensions.</p>
+                    <div class="solution-details" style="display: none;">
+                        <div class="solution-features">
+                            <h4>Audit Areas:</h4>
+                            <ul>
+                                <li><strong>People:</strong> Skills assessment & training needs</li>
+                                <li><strong>Data:</strong> Quality, accessibility & governance</li>
+                                <li><strong>Security:</strong> AI safety & compliance frameworks</li>
+                                <li><strong>Infrastructure:</strong> Technical readiness & scalability</li>
+                            </ul>
+                        </div>
+                        <div class="solution-levels">
+                            <span class="level-badge">Basic</span>
+                            <span class="level-badge">Standard</span>
+                            <span class="level-badge">Full</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" onclick="toggleSolution(this)">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Custom AI Solutions</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="solution-preview">Tailored AI agents and intelligent systems designed to automate and enhance your business processes.</p>
+                    <div class="solution-details" style="display: none;">
+                        <div class="solution-features">
+                            <h4>AI Agents:</h4>
+                            <ul>
+                                <li>Intelligent chatbots & virtual assistants</li>
+                                <li>Document summarizers & analyzers</li>
+                                <li>OCR & document processing systems</li>
+                                <li>Semantic search & recommendation engines</li>
+                            </ul>
+                            <h4>Optimization:</h4>
+                            <ul>
+                                <li>Memory management & context retention</li>
+                                <li>Latency optimization & performance tuning</li>
+                                <li>Cost optimization & resource management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" onclick="toggleSolution(this)">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Science Solutions</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="solution-preview">Advanced analytics and predictive modeling to uncover insights and drive data-driven decision making.</p>
+                    <div class="solution-details" style="display: none;">
+                        <div class="solution-features">
+                            <h4>Core Solutions:</h4>
+                            <ul>
+                                <li><strong>Forecasting:</strong> Demand, sales & trend prediction</li>
+                                <li><strong>Predictive Modeling:</strong> Risk assessment & opportunity identification</li>
+                                <li><strong>Customer Analytics:</strong> Behavior analysis & segmentation</li>
+                                <li><strong>Digital Transformation:</strong> Strategic roadmap & implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" onclick="toggleSolution(this)">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Business Intelligence</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <p class="solution-preview">Comprehensive BI solutions to transform raw data into actionable insights and strategic intelligence.</p>
+                    <div class="solution-details" style="display: none;">
+                        <div class="solution-features">
+                            <h4>Executive Dashboards:</h4>
+                            <ul>
+                                <li>Customized, real-time KPI tracking</li>
+                                <li>Interactive visualizations & reports</li>
+                                <li>Role-based access & permissions</li>
+                            </ul>
+                            <h4>Reporting & Monitoring:</h4>
+                            <ul>
+                                <li>Automated business reporting</li>
+                                <li>Real-time data updates & alerts</li>
+                                <li>Consistent metric monitoring</li>
+                            </ul>
+                            <h4>Market Analysis:</h4>
+                            <ul>
+                                <li>Industry trend assessment</li>
+                                <li>Customer preference analysis</li>
+                                <li>Competitive intelligence & insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight-text">IB Analytics</span></h2>
+                <p>Shaping AI solutions since 2019, transforming data into intelligence, and intelligence into action</p>
+            </div>
+            
+            <!-- Our Story -->
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our <span class="highlight-text">Story</span></h3>
+                        <p>We have been shaping AI solutions since 2019—steadily building, experimenting, and delivering results that matter. In 2025, we rebranded as IB Analytics. The name is new, but our mission remains constant: transforming data into intelligence, and intelligence into action.</p>
+                        <p>To us, becoming AI-native is more than adopting tools—it's about embedding intelligence at the core of an enterprise. That's why we position ourselves as a long-term partner, helping organizations design, implement, and sustain the right AI solutions for lasting impact.</p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="about-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-rocket"></i>
+                                <p>Our Journey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission & Vision -->
+            <div class="mission-vision">
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Mission</h3>
+                        <p>Empower enterprises to become <span class="highlight-text">AI-native</span> by delivering simple, scalable, and sustainable AI solutions.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Vision</h3>
+                        <p>To be the most <span class="highlight-text">trusted partner</span> for enterprises in their AI transformation journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-section">
+                <h3>Our <span class="highlight-text">Core Values</span></h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4><span class="highlight-value">Integrity</span></h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4><span class="highlight-value">Clarity</span></h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4><span class="highlight-value">Collaboration</span></h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4><span class="highlight-value">Agility</span></h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4><span class="highlight-value">Impact</span></h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-eye"></i>
+                        <h4><span class="highlight-value">Transparency</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership Team -->
+            <div class="leadership-section">
+                <h3>Our <span class="highlight-text">Leadership Team</span></h3>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-photo">
+                            <img src="Logo-new.png" alt="Mr. Indra Giri" class="leader-image">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Mr. Indra Giri</h4>
+                            <p class="leader-title">Co-Founder & <span class="highlight-text">Chief Executive Officer</span></p>
+                            <div class="leader-bio-container">
+                                <div class="leader-bio-preview">
+                                    <p>Mr. Indra Giri brings over 8 years of experience in data analytics, machine learning, and research...</p>
+                                    <button class="expand-btn" onclick="toggleBio(this)">Read More</button>
+                                </div>
+                                <div class="leader-bio-full" style="display: none;">
+                                    <p>Mr. Indra Giri brings over 8 years of experience in data analytics, machine learning, and research, combined with a proven track record of successfully leading multiple organizations in Nepal. Known for his exceptional leadership and strategic vision Indra excels in driving organizational growth and transformation. With a strong commitment and backed by a strong team Indra is leading Sankhya AI towards a future of innovation and success for businesses across the globe.</p>
+                                    <button class="collapse-btn" onclick="toggleBio(this)">Show Less</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-photo">
+                            <img src="Logo-new.png" alt="Mr. Bishu Giri" class="leader-image">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Mr. Bishu Giri</h4>
+                            <p class="leader-title">Co-Founder/Shareholder</p>
+                            <div class="leader-bio-container">
+                                <div class="leader-bio-preview">
+                                    <p>Bishu Giri is a data scientist with over eight years of experience. He has worked at Accenture AI team...</p>
+                                    <button class="expand-btn" onclick="toggleBio(this)">Read More</button>
+                                </div>
+                                <div class="leader-bio-full" style="display: none;">
+                                    <p>Bishu Giri is a data scientist with over eight years of experience. He has worked at Accenture AI team (formerly Bridgei2i) for six years before moving to the World Bank HQ, Washington D.C., where he works on implementing data science and AI solutions. At Accenture, Bishu led many projects – helping Fortune 500 organizations use data science to solve business problems. His work portfolio includes building fraud detection models, demand forecasting, loan default and loss provisioning models, recommendation engine, topic modeling and sentiment analysis, etc. His expertise extends to generative AI, database management, visualization, and geo-spatial analysis.</p>
+                                    <button class="collapse-btn" onclick="toggleBio(this)">Show Less</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-photo">
+                            <img src="Logo-new.png" alt="Mr. Sudip Giri" class="leader-image">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Mr. Sudip Giri</h4>
+                            <p class="leader-title">Chief Marketing Officer</p>
+                            <div class="leader-bio-container">
+                                <div class="leader-bio-preview">
+                                    <p>Leading our marketing initiatives and strategic partnerships to expand IB Analytics' global reach...</p>
+                                    <button class="expand-btn" onclick="toggleBio(this)">Read More</button>
+                                </div>
+                                <div class="leader-bio-full" style="display: none;">
+                                    <p>Leading our marketing initiatives and strategic partnerships to expand IB Analytics' global reach and impact in the AI transformation space.</p>
+                                    <button class="collapse-btn" onclick="toggleBio(this)">Show Less</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="highlight-text">Transform</span> Your Business with AI?</h2>
+                <p>Join hundreds of organizations that have already accelerated their growth with IB Analytics.</p>
+                <a href="#contact" class="btn btn-primary">Start Your AI Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="highlight-text">Touch</span></h2>
+                <p>Let's discuss how AI can transform your business</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ibanalytic.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office</h4>
+                            <p>Bag Bazar<br>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your AI needs" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Logo-new.png" alt="IB Analytics Logo" class="footer-logo-image">
+                    </div>
+                    <p>Empowering businesses to harness the full potential of artificial intelligence through strategic consulting, implementation, and optimization.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#ai-solutions">AI Strategy</a></li>
+                        <li><a href="#ai-solutions">Implementation</a></li>
+                        <li><a href="#ai-solutions">Training</a></li>
+                        <li><a href="#ai-solutions">Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IB Analytics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
